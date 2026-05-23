@@ -1,0 +1,38 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local backups of workflow JSON
+workflows/*.bak
+workflows/*.local.json
+workflows/backups/
+
+# Environment / secrets — never commit credentials
+.env
+.env.*
+*.pem
+*.key
+secrets/
+
+# Logs from local n8n experimentation
+*.log
+
+# Node (if anyone runs supporting scripts)
+node_modules/
+package-lock.json
+
+# Python (if anyone runs validation scripts locally)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Output of any test runs
+output/
+tmp/
